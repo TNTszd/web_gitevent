@@ -35,8 +35,10 @@ function renderAvatar(data) {
     if (data.user_pic !== null) {
         $('.layui-nav-img').attr('src', data.user_pic).show();
         $('.text-avatar').hide();
+    } else {
+        $('.layui-nav-img').hide();
+        var first = data.username[0].toUpperCase();
+        $('.text-avatar').html(first).show();
     }
-    $('.layui-nav-img').hide();
-    var first = data.username[0].toUpperCase();
-    $('.text-avatar').html(first).show();
+
 }

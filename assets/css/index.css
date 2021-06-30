@@ -56,3 +56,10 @@
     width: 40px;
     height: 40px;
 }
+
+
+/* layui默认给a做了transition动画 */
+
+a {
+    transition: none !important;
+}
