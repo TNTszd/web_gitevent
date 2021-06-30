@@ -31,6 +31,7 @@ $(function() {
         e.preventDefault();
         var data = { username: $('.reg-box [name="username"]').val(), password: $('.reg-box [name="password"]').val() }
         $.post('/api/reguser', data, function(res) {
+            // console.log(res.status);
             if (res.status !== 0) {
                 return layui.layer.msg(res.message)
             }
