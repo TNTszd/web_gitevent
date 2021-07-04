@@ -42,3 +42,8 @@ function renderAvatar(data) {
     }
 
 }
+//高亮显示列表
+function activeArtlist() {
+    $('.layui-this').removeClass('layui-this');
+    $('#art-list').addClass('layui-this');
+}
